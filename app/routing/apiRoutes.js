@@ -16,7 +16,7 @@ module.exports = function(app){
     //runs through all current friends in list
     for(var i=0; i<friendList.length; i++){
       var scoresDiff = 0;
-      //run through scores to compare friends
+      //run through each friends' scores to compare results
       for(var j=0; j<newScores.length; j++){
         scoresDiff += (Math.abs(parseInt(friendList[i].scores[j]) - parseInt(newScores[j])));
       }
